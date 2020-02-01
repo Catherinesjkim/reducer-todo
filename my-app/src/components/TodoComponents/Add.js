@@ -16,7 +16,12 @@ export const AddForm = props => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" onChange={(e) => {handleChange(e.target.value)}} name="todoInput" value={todoInput} />
+      <input 
+        type="text" 
+        onChange={(e) => {handleChange(e.target.value)}} 
+        name="todoInput" 
+        value={todoInput} 
+      />
       <button onClick={handleSubmit}>Add</button>
       <button onClick={handleClear}>Clear</button>
     </form>
