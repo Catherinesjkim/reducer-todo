@@ -5,12 +5,12 @@ export const ToDo = props => {
 
   return (
     <div className="id">
-      <li 
+      <div 
         onClick={() => props.toggleCompleted(props.todo.id)} 
         id={props.todo.id} 
         style={{textDecoration: props.todo.completed ? "line-through" : "none"}}
-      >{props.todo.todo}
-      </li>
+      ><p>{props.todo.item}</p>
+      </div>
     </div>
   )
 }
